@@ -1,0 +1,5 @@
+1	En tant qu'Agent je veux pouvoir consulter le revenu fiscal moyen des foyers de ma ville (Montpellier)	foyers_fiscaux
+
+SELECT AVG(n_foyers_fiscaux) from  foyers_fiscaux 
+where ville LIKE "Montpellier"
+
