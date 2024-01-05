@@ -3,5 +3,5 @@
 SELECT ville ,avg(prix/surface_habitable) as prixm2 from transactions
 where type_batiment like "Appartement"
 group by ville 
-order by prixm2 desc
+order by prixm2 asc
 limit 10
