@@ -1,0 +1,6 @@
+6	En tant qu'Agent je souhaite connaitre la répartition des appartements vendus (à Marseille) durant l'année 2022 en fonction du nombre de pièces	transactions
+
+select n_pieces  ,count(*) as ventes from transactions
+where type_batiment like 'Appartement' and date_transaction like "2022%"
+group by n_pieces 
+order by ventes 
