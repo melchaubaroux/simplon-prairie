@@ -1,0 +1,4 @@
+3	En tant qu'Agent je souhaite connaitre le nombre d'acquisitions dans ma ville (Paris) durant l'année 2022	transactions
+
+SELECT COUNT(*) FROM transactions
+WHERE ville LIKE "Paris" and date_transaction LIKE "%2022%"
