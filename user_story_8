@@ -1,0 +1,5 @@
+8	En tant que CEO, je veux consulter le nombre de transactions (tout type confondu) par département, ordonnées par ordre décroissant	transactions
+
+select  count(*) as ventes from transactions
+group by departement
+order by ventes desc
