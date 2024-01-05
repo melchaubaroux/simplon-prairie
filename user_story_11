@@ -1,0 +1,7 @@
+11	En tant que CEO, je veux accéder aux 10 villes avec un prix au m2 moyen le plus bas pour les appartements	transactions
+
+SELECT ville ,avg(prix/surface_habitable) as prixm2 from transactions
+where type_batiment like "Appartement"
+group by ville 
+order by prixm2 desc
+limit 10
