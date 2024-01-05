@@ -1,0 +1,6 @@
+10	En tant que CEO, je veux consulter le top 10 des villes les plus dynamiques en termes de transactions immobilières	transactions
+
+SELECT ville, count(*) as ventes from transactions_sample 
+group by ville
+order by ventes desc
+limit 10
