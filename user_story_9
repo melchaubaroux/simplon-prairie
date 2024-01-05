@@ -1,0 +1,9 @@
+9	En tant que CEO je souhaite connaitre le nombre total de vente d'appartements en 2022 dans toutes les villes où le revenu fiscal moyen en 2018 est supérieur à 70k	transactions + foyers_fiscaux
+
+select ts.ville, count(*) as ventes from transactions  ts
+JOIN foyers_fiscaux ff on ts.ville  = UPPER( ff.ville)
+
+where (revenu_fiscal_moyen >= 7000 and ff.date=2018) and  ts.date_transaction like "2022%"
+
+group by ts.ville
+order by ventes desc;
