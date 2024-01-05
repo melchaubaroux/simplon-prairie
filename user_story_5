@@ -1,0 +1,9 @@
+5	En tant qu'Agent je souhaite connaitre le nombre d'acquisitions de studios dans ma ville (Rennes) durant l'année 2022	transactions
+
+select count(*) from transactions
+where date_transaction like "2022%"
+and type_batiment like 'Appartement' 
+and n_pieces = 1
+and ville like "Rennes%"
+
+
