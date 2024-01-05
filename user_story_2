@@ -1,5 +1,5 @@
 2	En tant qu'Agent je veux consulter les 10 dernières transactions dans ma ville (Lyon)	transactions
 
 SELECT  * FROM transactions 
-ORDER BY date_transaction
+ORDER BY date_transaction DESC
 LIMIT 10 
